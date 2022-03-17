@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="Test 2(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.crm.testngscripts.CreateProductTest">
+        <methods>
+          <include name="connectToDB"/>
+          <include name="closeDB"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="createProduct"/>
+          <include name="launchBrowser"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.crm.testngscripts.CreateProductTest -->
+    </classes>
+  </test> <!-- Test 2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

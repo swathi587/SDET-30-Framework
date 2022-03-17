@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[===Connect to Database===]]>
+    </line>
+    <line>
+      <![CDATA[===Browser launch successful===]]>
+    </line>
+    <line>
+      <![CDATA[===Login successful===]]>
+    </line>
+    <line>
+      <![CDATA[[ LEA39 ] Sam - Lead Informationlead created]]>
+    </line>
+    <line>
+      <![CDATA[===Logout successful===]]>
+    </line>
+    <line>
+      <![CDATA[===Browser close successful===]]>
+    </line>
+    <line>
+      <![CDATA[===close Database successful===]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="29932" started-at="2022-03-17T05:45:58Z" finished-at="2022-03-17T05:46:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="29932" started-at="2022-03-17T05:45:58Z" finished-at="2022-03-17T05:46:28Z">
+      <class name="com.crm.testngscripts.CreateLeadTest">
+        <test-method status="PASS" signature="connectToDB()[pri:0, instance:com.crm.testngscripts.CreateLeadTest@4cf777e8]" name="connectToDB" is-config="true" duration-ms="20" started-at="2022-03-17T05:45:58Z" finished-at="2022-03-17T05:45:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[===Connect to Database===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.crm.testngscripts.CreateLeadTest@4cf777e8]" name="launchBrowser" is-config="true" duration-ms="5846" started-at="2022-03-17T05:45:58Z" finished-at="2022-03-17T05:46:04Z">
+          <reporter-output>
+            <line>
+              <![CDATA[===Browser launch successful===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.crm.testngscripts.CreateLeadTest@4cf777e8]" name="login" is-config="true" duration-ms="3602" started-at="2022-03-17T05:46:04Z" finished-at="2022-03-17T05:46:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[===Login successful===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="FAIL" signature="createLead()[pri:0, instance:com.crm.testngscripts.CreateLeadTest@4cf777e8]" name="createLead" duration-ms="15868" started-at="2022-03-17T05:46:07Z" finished-at="2022-03-17T05:46:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.crm.testngscripts.CreateLeadTest.createLead(CreateLeadTest.java:70)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[[ LEA39 ] Sam - Lead Informationlead created]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.crm.testngscripts.CreateLeadTest@4cf777e8]" name="logout" is-config="true" duration-ms="2681" started-at="2022-03-17T05:46:24Z" finished-at="2022-03-17T05:46:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[===Logout successful===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.crm.testngscripts.CreateLeadTest@4cf777e8]" name="closeBrowser" is-config="true" duration-ms="1299" started-at="2022-03-17T05:46:26Z" finished-at="2022-03-17T05:46:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[===Browser close successful===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeDB()[pri:0, instance:com.crm.testngscripts.CreateLeadTest@4cf777e8]" name="closeDB" is-config="true" duration-ms="1" started-at="2022-03-17T05:46:28Z" finished-at="2022-03-17T05:46:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[===close Database successful===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeDB -->
+      </class> <!-- com.crm.testngscripts.CreateLeadTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

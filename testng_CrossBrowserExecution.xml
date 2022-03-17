@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests">
+
+  <test thread-count="2" name="Test 1" parallel="tests">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.crm.testngscripts.CreateLeadTest"/>
+     </classes>
+       </test> <!-- Test -->
+       
+       <test thread-count="2" name="Test 2" parallel="tests">
+       <parameter name="browser" value="firefox" ></parameter>
+       <classes>
+      <class name="com.crm.testngscripts.CreateProductTest"/>
+       </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
